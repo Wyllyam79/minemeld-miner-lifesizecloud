@@ -7,7 +7,7 @@ from minemeld.ft.basepoller import BasePollerFT
 
 LOG = logging.getLogger(__name__)
 
-class IPv4(basepoller.BasePollerFT):
+class IPv4(BasePollerFT):
 	def configure(self):
 		super(IPv4, self).configure()
 
