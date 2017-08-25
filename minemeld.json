@@ -1,17 +1,15 @@
 {
-    "version": "0.4",
+    "version": "0.1",
     "name": "youtube-miner",
-    "author": "Palo Alto Networks",
-    "author_email": "techbizdev@paloaltonetworks.com",
-    "description": "Sample MineMeld node extension for mining Youtube API",
+    "author": "Wyllyam79",
+    "author_email": "",
+    "description": "MineMeld node extension for mining LifeSizeCloud Server IP",
     "entry_points": {
         "minemeld_nodes": {
-            "youtubeminer.Miner": "youtubeminer.node:Miner",
-            "youtubeminer.PlaylistMiner": "youtubeminer.node:PlaylistMiner",
-            "youtubeminer.ChannelMiner": "youtubeminer.node:ChannelMiner"
+            "lifesizecloud.IPv4": "lifesizecloud.node:IPv4"
         },
         "minemeld_prototypes": {
-            "youtubeminer.prototypes": "youtubeminer:prototypes"
+            "lifesizecloud.prototypes": "lifesizecloud:prototypes"
         }
     },
     "manifest_version": 0
