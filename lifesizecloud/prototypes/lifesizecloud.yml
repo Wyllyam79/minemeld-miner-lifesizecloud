@@ -1,0 +1,28 @@
+
+description: >
+  Get from LifeSize Community the table with IPv4 addr for their servers
+
+url: https://github.com/Wyllyam79/minemeld-miner-lifesizecloud
+
+prototypes:
+  LifeSizeCloud_IPv4:
+    author: Wyllyam79
+    class: lifesizecloud.IPv4
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - extension
+      - lifesizecloud
+    description: >
+      Miner for IPv4 addresses of LifeSizeCloud Servers from their Community site
+    config:
+      # age out of indicators
+      # disabled, removed when they disappear from the channel
+      age_out:
+        sudden_death: true
+        default: null
+      # flag indicators with share level green
+      attributes:
+        share_level: green
+
